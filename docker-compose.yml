@@ -36,11 +36,9 @@ services:
       - traefik.http.routers.nginx-mirror.service=nginx-mirror-service
       - traefik.http.services.nginx-mirror-service.loadbalancer.server.port=80
 
-      - traefik.http.routers.nginx-mirrors.rule=Host(`mirror.jingk.ai`)
-      - traefik.http.routers.nginx-mirrors.entrypoints=https
-      - traefik.http.routers.nginx-mirrors.service=nginx-mirrors-service
-      - traefik.http.services.nginx-mirrors-service.loadbalancer.server.port=443
-
+      - "traefik.tcp.routers.nginx-mirrors.rule=HostSNI(`mirror.jingk.ai`)"
+      - "traefik.tcp.routers.nginx-mirrors.tls.passthrough=true"
+      - "traefik.tcp.services.nginx-mirrors.loadbalancer.server.port=443"
 
 networks:
     homenetwork:
