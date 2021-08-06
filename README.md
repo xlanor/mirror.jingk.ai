@@ -9,9 +9,9 @@ Inspired by my friends running mirrors:
 
 Also, too many of the smaller distributions that I utilise have only one mirror in the region.
 
-| [Http](http://mirror.jingk.ai)  | [Https](https://mirror.jingk.ai) | Rsync |
+| [Http](http://mirror.jingk.ai)  | [Https](https://mirror.jingk.ai) | ][Rsync](rsync://mirror.jingk.ai) |
 | ------------- | ------------- | ------------- | 
-| :white_check_mark:	 | :white_check_mark:	 | :x: (soon) | 
+| :white_check_mark:	 | :white_check_mark:	 | :white_check_mark: | 
 
 The following packages are mirrored:
 
