@@ -4,7 +4,9 @@ A linux mirror in the Singapore region.
 
 Inspired by my friends [Andrew](https://mirror.0x.sg), [Kenny](http://mirror.aktkn.sg) and [Likang](https://mirror.kst.asia/)
 
-Nginx is ran as a webserver, with traefik sitting in front as a reverse proxy (for my other services).
+Caddy is ran as a webserver, with traefik sitting in front as a reverse proxy (for my other services).
+
+You can run Caddy standalone as a webserver/reverseproxy, I just set up traefik first before finding out about Caddy so I haven't migrated my existing services yet, hence the tcp passthrough for https traffic.
 
 | [Http](http://mirror.jingk.ai)  | [Https](https://mirror.jingk.ai) | Rsync |
 | ------------- | ------------- | ------------- | 
