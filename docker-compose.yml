@@ -10,15 +10,35 @@ services:
     networks:
     - homenetwork
   
+  rsyncd:
+    build:
+      context: ./rsyncd
+      dockerfile: rsyncd.Dockerfile
+    container_name: rsyncd
+    restart: always
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Asia/Singapore
+    volumes:
+      - ./rsyncd/config:/config
+      - ./rsyncd/log:/log
+      - /mnt/nas/mirror/pub:/data
+    networks:
+      - homenetwork
+    ports:
+    - "873:873"
+
+  
   caddy2:
     image: caddy:2.4.3-alpine
     container_name: caddy2-mirror
     cap_add:
       - NET_ADMIN
     environment:
-    - PUID=1000
-    - PGID=1000
-    - TZ=Asia/Singapore
+      - PUID=1000
+      - PGID=1000
+      - TZ=Asia/Singapore
     restart: always
     volumes:  
       - ./caddy/caddy:/etc/caddy
