@@ -21,10 +21,10 @@ services:
     - TZ=Asia/Singapore
     restart: always
     volumes:  
-      - ./caddy/Caddyfile:/etc/caddy/Caddyfile
-      - ./caddy/site:/srv
-      - ./caddy/caddy_data:/data
-      - ./caddy/caddy_config:/config
+      - ./caddy/caddy:/etc/caddy
+      - ./caddy/site:/srv 
+      - caddy_data:/data
+      - caddy_config:/config
       - /mnt/nas/mirror/pub:/var/www/mirror
     networks:
       - homenetwork
@@ -42,6 +42,10 @@ services:
       - "traefik.tcp.routers.nginx-mirrors.tls.passthrough=true"
       - "traefik.tcp.services.nginx-mirrors.loadbalancer.server.port=443"
 
+volumes:
+  caddy_data:
+    external: true
+  caddy_config:
 networks:
     homenetwork:
         external: true
