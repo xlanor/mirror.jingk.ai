@@ -6,7 +6,7 @@ Inspired by my friends [Andrew](https://mirror.0x.sg), [Kenny](http://mirror.akt
 
 Nginx is ran as a webserver, with traefik sitting in front as a reverse proxy (for my other services).
 
-| HTTP  | HTTPS | Rsync |
+| [Http](http://mirror.jingk.ai)  | [Https](https://mirror.jingk.ai) | Rsync |
 | ------------- | ------------- | ------------- | 
 | :white_check_mark:	 | :white_check_mark:	 | :x: (soon) | 
 
