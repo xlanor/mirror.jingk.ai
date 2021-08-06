@@ -39,6 +39,28 @@ services:
       - "traefik.tcp.routers.nginx-mirrors.rule=HostSNI(`mirror.jingk.ai`)"
       - "traefik.tcp.routers.nginx-mirrors.tls.passthrough=true"
       - "traefik.tcp.services.nginx-mirrors.loadbalancer.server.port=443"
+  
+  caddy2:
+    image: caddy:2.4.3-alpine
+    container_name: caddy2-mirror
+    cap_add:
+      - NET_ADMIN
+    environment:
+    - PUID=1000
+    - PGID=1000
+    - TZ=Asia/Singapore
+    - URL=mirror.jingk.ai
+    - VALIDATION=http
+    restart: always
+    volumes:
+      - /mnt/nas/mirror/pub:/var/www/mirror
+    networks:
+      - homenetwork
+    ports:
+    - "9004:80"
+    - "9005:443"
+    labels:
+      - traefik.enable=true
 
 networks:
     homenetwork:
