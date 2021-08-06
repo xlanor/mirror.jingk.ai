@@ -1,0 +1,5 @@
+mirror.jingk.ai :80, :443 {
+    file_server browse {
+        root          /var/www/mirror
+    }
+}

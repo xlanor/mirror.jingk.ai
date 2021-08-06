@@ -9,36 +9,6 @@ services:
         - /mnt/nas/mirror:/mnt/mirror/
     networks:
     - homenetwork
-  nginx:
-    image: ghcr.io/linuxserver/swag
-    container_name: swag
-    cap_add:
-      - NET_ADMIN
-    environment:
-    - PUID=1000
-    - PGID=1000
-    - TZ=Asia/Singapore
-    - URL=mirror.jingk.ai
-    - VALIDATION=http
-    restart: always
-    volumes:
-      - ./swag/config:/config
-      - /mnt/nas/mirror/pub:/var/www/mirror
-    networks:
-      - homenetwork
-    ports:
-    - "9001:80"
-    - "9002:443"
-    labels:
-      - traefik.enable=true
-      - traefik.http.routers.nginx-mirror.rule=Host(`mirror.jingk.ai`)
-      - traefik.http.routers.nginx-mirror.entrypoints=http
-      - traefik.http.routers.nginx-mirror.service=nginx-mirror-service
-      - traefik.http.services.nginx-mirror-service.loadbalancer.server.port=80
-
-      - "traefik.tcp.routers.nginx-mirrors.rule=HostSNI(`mirror.jingk.ai`)"
-      - "traefik.tcp.routers.nginx-mirrors.tls.passthrough=true"
-      - "traefik.tcp.services.nginx-mirrors.loadbalancer.server.port=443"
   
   caddy2:
     image: caddy:2.4.3-alpine
@@ -49,10 +19,12 @@ services:
     - PUID=1000
     - PGID=1000
     - TZ=Asia/Singapore
-    - URL=mirror.jingk.ai
-    - VALIDATION=http
     restart: always
-    volumes:
+    volumes:  
+      - ./caddy/Caddyfile:/etc/caddy/Caddyfile
+      - ./caddy/site:/srv
+      - ./caddy/caddy_data:/data
+      - ./caddy/caddy_config:/config
       - /mnt/nas/mirror/pub:/var/www/mirror
     networks:
       - homenetwork
@@ -61,6 +33,14 @@ services:
     - "9005:443"
     labels:
       - traefik.enable=true
+      - traefik.http.routers.nginx-mirror.rule=Host(`mirror.jingk.ai`)
+      - traefik.http.routers.nginx-mirror.entrypoints=http
+      - traefik.http.routers.nginx-mirror.service=nginx-mirror-service
+      - traefik.http.services.nginx-mirror-service.loadbalancer.server.port=80
+
+      - "traefik.tcp.routers.nginx-mirrors.rule=HostSNI(`mirror.jingk.ai`)"
+      - "traefik.tcp.routers.nginx-mirrors.tls.passthrough=true"
+      - "traefik.tcp.services.nginx-mirrors.loadbalancer.server.port=443"
 
 networks:
     homenetwork:
