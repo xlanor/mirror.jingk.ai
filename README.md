@@ -15,7 +15,7 @@ This mirror is ran on a [ViewQwest](https://viewqwest.com) 1gbps line, and offer
 | OS  | Upstream | 
 | ------------- | ------------- | 
 | Arch Linux | [UC Berkerly](https://archlinux.org/mirrors/ocf.berkeley.edu/) | 
-| Alpine Linux | [Leaseweb](http://mirror.leaseweb.com/alpine/) | 
+| Alpine Linux | [Princeton University](https://mirror.math.princeton.edu/pub/alpinelinux/) | 
 | Void Linux | [Swinburne University of Technology](http://ftp.swin.edu.au/voidlinux/) | 
 
 
