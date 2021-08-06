@@ -14,11 +14,11 @@ You can run Caddy standalone as a webserver/reverseproxy, I just set up traefik 
 
 This mirror is ran on a [ViewQwest](https://viewqwest.com) 1gbps line, and offers the following OS packages:
 
-| OS  | Upstream | 
-| ------------- | ------------- | 
-| Arch Linux | [UC Berkerly](https://archlinux.org/mirrors/ocf.berkeley.edu/) | 
-| Alpine Linux | [Princeton University](https://mirror.math.princeton.edu/pub/alpinelinux/) | 
-| Void Linux | [Swinburne University of Technology](http://ftp.swin.edu.au/voidlinux/) | 
+| OS  | Upstream |  Target  |   Initial Sync  | 
+| ------------- | ------------- |  ------------- |  ------------- | 
+| Arch Linux | [UC Berkerly](https://archlinux.org/mirrors/ocf.berkeley.edu/) |  Full Mirror | :white_check_mark: |
+| Alpine Linux | [Princeton University](https://mirror.math.princeton.edu/pub/alpinelinux/) |  Full Mirror | :x:  | 
+| Rocky Linux | [eScience Center, Nanjing University](https://mirrors.nju.edu.cn/rocky) | Full Mirror | :x:  | 
 
 
 Rsync jobs will be ran hourly until the mirror is stable, at which point they will be increased to sync at a 4-5 hour duration.

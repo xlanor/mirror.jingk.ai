@@ -1,4 +1,4 @@
 0 * * * * ionice -c 3 rsync -rlptH --chmod=a+rX --chmod=ug+w --safe-links --delete-delay --delay-updates --progress --safe-links rsync://mirrors.ocf.berkeley.edu/archlinux/ /mnt/mirror/pub/archlinux/ >> /var/log/archlinux.log 2>&1
-#10 * * * * ionice -c 3 rsync -rlptH --chmod=a+rX --chmod=ug+w --safe-links --delete-delay --delay-updates --progress --safe-links rsync://ftp.swin.edu.au/voidlinux/ /mnt/mirror/pub/voidlinux/ >> /var/log/voidlinux.log 2>&1
+#10 * * * * ionice -c 3 rsync -rlptH --chmod=a+rX --chmod=ug+w --safe-links --delete-delay --delay-updates --progress --safe-links rsync://mirror.nju.edu.cn/rocky /mnt/mirror/pub/rocky/  >> /var/log/rocky.log 2>&1
 #15 * * * * ionice -c 3 rsync -rlptH --chmod=a+rX --chmod=ug+w --safe-links --delete-delay --delay-updates --progress --safe-links rsync://mirror.math.princeton.edu/pub/alpinelinux/ /mnt/mirror/pub/alpine/ >> /var/log/alpine.log 2>&1
 
