@@ -26,7 +26,6 @@ The following packages are mirrored:
 | Alpine Linux | [Princeton University](https://mirror.math.princeton.edu/pub/alpinelinux/) |  Full Mirror | :x:  | 
 | Rocky Linux | [Angil Linux Archive](https://mirror.anigil.com/rocky/) | Full Mirror | :x:  | 
 | EndeavourOS | [Alpix](https://mirror.alpix.eu/endeavouros/) | Full Mirror | :white_check_mark:  | 
-| EndeavourOS ISO | [Alpix](https://mirror.anigil.com/endeavouros-iso/) | Full Mirror | :white_check_mark:  | 
 
 The homelab equipment powering this mirror
 
