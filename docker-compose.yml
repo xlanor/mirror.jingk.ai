@@ -4,9 +4,28 @@ services:
     build:
       context: ./.docker
       dockerfile: rs-cron.Dockerfile
+    container_name: rsync-cron-ubuntu
     restart: always
     volumes:
         - /mnt/nas/mirror:/mnt/mirror/
+    networks:
+    - homenetwork
+  
+  rsync-crond:
+    build:
+      context: ./rsync-cron-alpine
+      dockerfile: Dockerfile
+    image: rsync-crond-alpine:latest
+    container_name: rsync-crondaemon
+    restart: always
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Asia/Singapore
+    volumes:
+      - ./rsync-cron-alpine/scripts/hello-world:/etc/periodic/1min/:ro
+      - ./rsync-cron-alpine/mirror:/etc/periodic/mirror/:ro
+      - /mnt/nas/mirror:/mnt/mirror/
     networks:
     - homenetwork
   
