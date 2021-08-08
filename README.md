@@ -24,7 +24,7 @@ The following packages are mirrored:
 | ------------- | ------------- |  ------------- |  ------------- | 
 | Arch Linux | [UC Berkerly](https://archlinux.org/mirrors/ocf.berkeley.edu/) |  Full Mirror | :white_check_mark: |
 | Alpine Linux | [Princeton University](https://mirror.math.princeton.edu/pub/alpinelinux/) |  Full Mirror | :x:  | 
-| Rocky Linux | [Angil Linux Archive](https://mirror.anigil.com/rocky/) | Full Mirror | :x:  | 
+| Rocky Linux | [Angil Linux Archive](https://mirror.anigil.com/rocky/) | Full Mirror | :white_check_mark:  | 
 | EndeavourOS | [Alpix](https://mirror.alpix.eu/endeavouros/) | Full Mirror | :white_check_mark:  | 
 
 The homelab equipment powering this mirror
