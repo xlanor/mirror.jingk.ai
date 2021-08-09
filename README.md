@@ -10,9 +10,11 @@ Inspired by my friends running mirrors:
 
 ### Why run a mirror?
 
-Too many of the smaller distributions that I utilise have only one mirror in the region.
+Too many of the smaller distributions that I utilise have only one mirror in the region. 
 
 As several of my colleagues use Arch and alpine quite frequently, I decided it was probably simpler to set up my own mirror to resolve any synchronisation issues.
+
+The goal of this mirror is to increase coverage for less popular linux distros in Singapore. As such, I will try not to sync distributions that already have many good and existing mirrors in SG, unless I am personally using them.
 
 | [Http](http://mirror.jingk.ai)  | [Https](https://mirror.jingk.ai) | [Rsync](rsync://mirror.jingk.ai) |
 | ------------- | ------------- | ------------- | 
@@ -22,10 +24,11 @@ The following packages are mirrored:
 
 | OS  | Upstream |  Target  |   Initial Sync  | 
 | ------------- | ------------- |  ------------- |  ------------- | 
-| Arch Linux | [UC Berkerly](https://archlinux.org/mirrors/ocf.berkeley.edu/) |  Full Mirror | :white_check_mark: |
-| Alpine Linux | [Princeton University](https://mirror.math.princeton.edu/pub/alpinelinux/) |  Full Mirror | :x:  | 
-| Rocky Linux | [Angil Linux Archive](https://mirror.anigil.com/rocky/) | Full Mirror | :white_check_mark:  | 
-| EndeavourOS | [Alpix](https://mirror.alpix.eu/endeavouros/) | Full Mirror | :white_check_mark:  | 
+| [Arch Linux](https://archlinux.org) | [UC Berkerly](https://archlinux.org/mirrors/ocf.berkeley.edu/) |  Full Mirror | :white_check_mark: |
+| [Alpine Linux](https://alpinelinux.org) | [Princeton University](https://mirror.math.princeton.edu/pub/alpinelinux/) |  Full Mirror | :x:  | 
+| [Void Linux](https://voidlinux.org) | [Void Linux EU](https://alpha.de.repo.voidlinux.org/) |  Full Mirror | :x:  | 
+| [Rocky Linux](https://rockylinux.org) | [Angil Linux Archive](https://mirror.anigil.com/rocky/) | Full Mirror | :white_check_mark:  | 
+| [EndeavourOS](https://endeavouros.com) | [Alpix](https://mirror.alpix.eu/endeavouros/) | Full Mirror | :white_check_mark:  | 
 
 The homelab equipment powering this mirror
 
