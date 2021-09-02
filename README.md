@@ -16,6 +16,8 @@ As several of my colleagues use Arch and alpine quite frequently, I decided it w
 
 The goal of this mirror is to increase coverage for less popular linux distros in Singapore. As such, I will try not to sync distributions that already have many good and existing mirrors in SG, unless I am personally using them.
 
+You can check my mirror status from [Archlinux](https://archlinux.org/mirrors/jingk.ai/) here.
+
 | [Http](http://mirror.jingk.ai)  | [Https](https://mirror.jingk.ai) | [Rsync](rsync://mirror.jingk.ai) |
 | ------------- | ------------- | ------------- | 
 | :white_check_mark:	 | :white_check_mark:	 | :white_check_mark: | 
