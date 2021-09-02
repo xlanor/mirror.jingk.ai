@@ -25,8 +25,7 @@ The following packages are mirrored:
 | OS  | Upstream |  Target  |   Initial Sync  | 
 | ------------- | ------------- |  ------------- |  ------------- | 
 | [Arch Linux](https://archlinux.org) | [UC Berkerly](https://archlinux.org/mirrors/ocf.berkeley.edu/) |  Full Mirror | :white_check_mark: |
-| [Alpine Linux](https://alpinelinux.org) | [Princeton University](https://mirror.math.princeton.edu/pub/alpinelinux/) |  Full Mirror | :x:  | 
-| [Void Linux](https://voidlinux.org) | [Void Linux EU](https://alpha.de.repo.voidlinux.org/) |  Full Mirror | :x:  | 
+| [Void Linux](https://voidlinux.org) | [Void Linux EU](https://alpha.de.repo.voidlinux.org/) |  Full Mirror | ✅:  | 
 | [Rocky Linux](https://rockylinux.org) | [Rackspace HKG](https://hkg.mirror.rackspace.com/rocky) | Full Mirror | :white_check_mark:  | 
 | [EndeavourOS](https://endeavouros.com) | [Alpix](https://mirror.alpix.eu/endeavouros/) | Full Mirror | :white_check_mark:  | 
 
