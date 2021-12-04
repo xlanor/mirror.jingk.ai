@@ -76,7 +76,9 @@ services:
       - traefik.http.routers.nginx-mirror.entrypoints=http
       - traefik.http.routers.nginx-mirror.service=nginx-mirror-service
       - traefik.http.services.nginx-mirror-service.loadbalancer.server.port=80
-
+      # We already have an existing traefik infront of us
+      # In that case since caddy provisions the ssl cert for mirror.jingk.ai from lets encrypt
+      # We tell traefik to run in L4 mode and forward traffic to caddy.
       - "traefik.tcp.routers.nginx-mirrors.rule=HostSNI(`mirror.jingk.ai`)"
       - "traefik.tcp.routers.nginx-mirrors.tls.passthrough=true"
       - "traefik.tcp.services.nginx-mirrors.loadbalancer.server.port=443"
