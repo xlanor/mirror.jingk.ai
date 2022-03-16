@@ -31,7 +31,8 @@ The following packages are mirrored:
 | [Rocky Linux](https://rockylinux.org) | [Rackspace HKG](https://hkg.mirror.rackspace.com/rocky) | Full Mirror | ✅ | 
 | [EndeavourOS](https://endeavouros.com) | [Alpix](https://mirror.alpix.eu/endeavouros/) | Full Mirror | ✅ | 
 | [MXLinux](https://mxlinux.org/) | [Rochester Institute of Technology](https://mirrors.rit.edu/mxlinux/) | Full Mirror | ✅ | 
-| [ZorinOS](https://zorin.com/os/) | [ZorinOS Tier 1 Upstream] | ISOs | ✅ | 
+| [ZorinOS](https://zorin.com/os/) | ZorinOS Tier 1 Upstream | ISOs | ✅ |
+| [ArcoLinux](https://archolinux.com) | [Funami](https://mirror.funami.tech) | Full Mirror | ✅ | 
 
 The homelab equipment powering this mirror
 

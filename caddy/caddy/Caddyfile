@@ -1,3 +1,6 @@
+{
+    auto_https disable_redirects
+}
 mirror.jingk.ai :80, :443 {
     file_server {
         browse /etc/caddy/template.html
