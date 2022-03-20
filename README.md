@@ -1,3 +1,4 @@
+# Undergoing server rehoming at the end of March! Please check the issues for more information
 # mirror.jingk.ai
 
 A linux mirror in the Singapore region.
