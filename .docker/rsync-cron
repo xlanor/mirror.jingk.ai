@@ -1,7 +1,5 @@
 0 * * * * ionice -c 3 rsync -rlptH --chmod=a+rX --chmod=ug+w --safe-links --delete-delay --delay-updates --progress --safe-links rsync://mirrors.ocf.berkeley.edu/archlinux/ /mnt/mirror/pub/archlinux/ >> /var/log/archlinux.log 2>&1
 0 * * * * ionice -c 3 rsync -rlptH --chmod=a+rX --chmod=ug+w --safe-links --delete-delay --delay-updates --progress --safe-links rsync://mirror.alpix.eu/endeavouros/ /mnt/mirror/pub/endeavouros/ >> /var/log/endeavouros.log 2>&1
 10 */4 * * * ionice -c 3 rsync -rlptH --chmod=a+rX --chmod=ug+w --safe-links --delete-delay --delay-updates --progress --safe-links rsync://hkg.mirror.rackspace.com/rocky /mnt/mirror/pub/rocky/  >> /var/log/rocky.log 2>&1
-10 */30 * * * ionice -c 3 rsync -rlptH --chmod=a+rX --chmod=ug+w --safe-links --delete-delay --delay-updates --progress --safe-links rsync://alpha.de.repo.voidlinux.org/voidmirror /mnt/nas/mirror/pub/voidlinux/
-0 23 * * * ionice -c 3 rsync -rlptH --chmod=a+rX --chmod=ug+w --safe-links --delete-delay --delay-updates --progress --safe-links rsync://alpha.de.repo.voidlinux.org/voidmirror /mnt/nas/mirror/pub/voidlinux/
-10 */45 * * * ionice -c 3 rsync -rlptH --chmod=a+rX --chmod=ug+w --safe-links --delete-delay --delay-updates --progress --safe-links rsync://mirrors.rit.edu/mxlinux /mnt/nas/mirror/pub/mxlinux/
-0 0,12 * * * ionice -c 3 rsync -rlptH --chmod=a+rX --chmod=ug+w --safe-links --delete-delay --delay-updates --progress --safe-links rsync://mirrors.funami.tech/arcolinux /mnt/nas/mirror/pub/arcolinux/
+10 */45 * * * ionice -c 3 rsync -rlptH --chmod=a+rX --chmod=ug+w --safe-links --delete-delay --delay-updates --progress --safe-links rsync://mirrors.rit.edu/mxlinux /mnt/nas/mirror/pub/mxlinux/ >> /var/log/mxlinux.log 2>&1
+0 0,12 * * * ionice -c 3 rsync -rlptH --chmod=a+rX --chmod=ug+w --safe-links --delete-delay --delay-updates --progress --safe-links rsync://mirrors.funami.tech/arcolinux /mnt/nas/mirror/pub/arcolinux/ >> /var/log/arco.log 2>&1
