@@ -28,12 +28,11 @@ The following packages are mirrored:
 | OS  | Upstream |  Target  |   Initial Sync  | 
 | ------------- | ------------- |  ------------- |  ------------- | 
 | [Arch Linux](https://archlinux.org) | [UC Berkerly](https://archlinux.org/mirrors/ocf.berkeley.edu/) |  Full Mirror | ✅ |
-| [Void Linux](https://voidlinux.org) | [Void Linux EU](https://alpha.de.repo.voidlinux.org/) |  Full Mirror | ❎  | 
-| [Rocky Linux](https://rockylinux.org) | [Rackspace HKG](https://hkg.mirror.rackspace.com/rocky) | Full Mirror | ✅ | 
+| [Rocky Linux](https://rockylinux.org) | [eScience Center, Nanjing University](https://mirrors.nju.edu.cn/rocky) | Full Mirror | ✅ | 
 | [EndeavourOS](https://endeavouros.com) | [Alpix](https://mirror.alpix.eu/endeavouros/) | Full Mirror | ✅ | 
 | [MXLinux](https://mxlinux.org/) | [Rochester Institute of Technology](https://mirrors.rit.edu/mxlinux/) | Full Mirror | ✅ | 
 | [ZorinOS](https://zorin.com/os/) | ZorinOS Tier 1 Upstream | ISOs | ✅ |
-| [ArcoLinux](https://archolinux.com) | [Funami](https://mirror.funami.tech) | Full Mirror | ✅ | 
+| [ArcoLinux](https://archolinux.com) | [Belnet](ftp://ftp.belnet.be ) | Full Mirror | ✅ | 
 
 The homelab equipment powering this mirror
 

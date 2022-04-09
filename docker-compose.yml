@@ -7,6 +7,7 @@ services:
     container_name: rsync-cron-ubuntu
     restart: always
     volumes:
+        - ./log:/var/log
         - /mnt/nas/mirror:/mnt/mirror/
     networks:
     - homenetwork
