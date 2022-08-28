@@ -1,4 +1,4 @@
-# Emergency Hardware Maintanence 28 06 22 0907 +1 BST -> 1130 +1 BST
+
 # mirror.jingk.ai
 
 A linux mirror in the Singapore region.
