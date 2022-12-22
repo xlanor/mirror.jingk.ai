@@ -10,7 +10,7 @@ Inspired by my friends running mirrors:
 
 ### Service in India may be affected
 
-This mirror is running on a cloudflare domain, and may not be avaliable to users from India as there are ISP blocks being implemented on cloudflare.
+This mirror is running on a cloudflare domain, and may not be avaliable to users from India as there are ISPs who block domains hosted on cf due to a court order.
 
 Please move to another mirror service instead as I do not intend to move from cf.
 
