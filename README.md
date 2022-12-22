@@ -14,6 +14,9 @@ This mirror is running on a cloudflare domain, and may not be avaliable to users
 
 Please move to another mirror service instead as I do not intend to move from cf.
 
+For affected EndeavourOS users in particular in india, please consider using [freedif](mirror.freedif.org). All endeavourOS mirrors sync off Tier 1, and the dns service for mirror.freedif.org is provided by OVH, so you should not see any changes in service coverage.
+
+
 ### Why run a mirror?
 
 Too many of the smaller distributions that I utilise have only one mirror in the region. 
