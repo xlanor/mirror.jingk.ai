@@ -8,6 +8,11 @@ Inspired by my friends running mirrors:
 - [Kenny](https://mirror.aktkn.sg) 
 - [Likang](https://mirror.kst.asia/)
 
+### Service in India may be affected
+
+This mirror is running on a cloudflare domain, and may not be avaliable to users from India as there are ISP blocks being implemented on cloudflare.
+
+Please move to another mirror service instead as I do not intend to move from cf.
 
 ### Why run a mirror?
 
