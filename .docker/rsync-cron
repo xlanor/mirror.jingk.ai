@@ -4,3 +4,4 @@
 30 */4 * * * ionice -c 3 rsync -rlptH --chmod=a+rX --chmod=ug+w --safe-links --delete-delay --delay-updates --progress --safe-links rsync://mirrors.rit.edu/mxlinux /mnt/mirror/pub/mxlinux/ >> /var/log/mxlinux.log 2>&1
 1 */4 * * * ionice -c 3 rsync -rlptH --chmod=a+rX --chmod=ug+w --safe-links --delete-delay --delay-updates --progress --safe-links rsync://ftp.belnet.be/arcolinux /mnt/mirror/pub/arcolinux/ >> /var/log/arco.log 2>&1
  20 */4 * * * ionice -c 3 rsync -rlptH --chmod=a+rX --chmod=ug+w --safe-links --delete-delay --delay -updates --progress --safe-links rsync://mirror.zorinos.com/isos /mnt/mirror/pub/zorin/ >> /var/log/zorin.log 2>&1
+15 */4 * * * ionice -c 3 rsync -rlptH --chmod=a+rX --chmod=ug+w --safe-links --delete-delay --delay -updates --progress --safe-links rsync://ftp.lyx.org/ftp/pub/lyx /mnt/mirror/pub/lyx/ >> /var/log/lyx.log 2>&1
