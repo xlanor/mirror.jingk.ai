@@ -46,14 +46,10 @@ The homelab equipment powering this mirror
 
 | Part  | Details | 
 | ------------- | ------------- | 
-| Server | i7-7980xe, 64gb DDR4 | 
-| Storage | CIFS to a ZFS pool made up of HGST 10tbs and Seagate Ironwolf Pros | 
-| Switch | Cisco SG300-10P | 
-| Router | Ubiqutti Dream Machine | 
-| Network | 1GbE ViewQwest | 
+| Server | Virtualized Proxmox | 
+| Storage | CIFS to a ZFS pool made up of WD HC530s and Seagate Ironwolf Pros | 
+| Switch | Mikrotik CRS309-1G-8S | Brocade ICX6450-24P | 
+| Router | Mikrotik CCR2116-12G-4S+ | 
+| Network | 1GbE MyRepublic, failover 1GbE M1 | 
 
-In this setup, Caddy is ran as a webserver, with traefik sitting in front as a reverse proxy (for my other services).
-
-You can run Caddy standalone as a webserver/rproxy. This implementation is due to my existing setup with traefik.
-
-The cronjob is temporarily set to run on every hour. I am currently rewriting the cron container to run in a more lightweight setting and pull on a randomised minute, following which the mirror will sync on a 4 hour interval.
+In this setup, Caddy is ran as a webserver to handle ssl authentication, and L4 forwarding is done with 2 haproxy setups.
