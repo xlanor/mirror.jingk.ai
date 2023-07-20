@@ -3,6 +3,8 @@
 
 A Linux mirror in the Singapore region. Serving APAC users.
 
+If you would like your distribution to be mirrored, please open an issue with an rsync upstream.
+
 Inspired by my friends running mirrors:
 - [Andrew](https://mirror.0x.sg) 
 - [Kenny](https://mirror.aktkn.sg) 
