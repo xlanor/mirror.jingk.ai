@@ -1,21 +1,12 @@
 
 # mirror.jingk.ai
 
-A linux mirror in the Singapore region.
+A Linux mirror in the Singapore region. Serving APAC users.
 
 Inspired by my friends running mirrors:
 - [Andrew](https://mirror.0x.sg) 
 - [Kenny](https://mirror.aktkn.sg) 
 - [Likang](https://mirror.kst.asia/)
-
-### Service in India may be affected
-
-This mirror is running on a cloudflare domain, and may not be avaliable to users from India as there are ISPs who block domains hosted on cf due to a court order.
-
-Please move to another mirror service instead as I do not intend to move from cf.
-
-For affected EndeavourOS users in particular in india, please consider using [freedif](mirror.freedif.org). All endeavourOS mirrors sync off Tier 1, and the dns service for mirror.freedif.org is provided by OVH, so you should not see any changes in service coverage.
-
 
 ### Why run a mirror?
 
@@ -35,8 +26,8 @@ The following packages are mirrored:
 
 | OS  | Upstream |  Target  |   Initial Sync  | 
 | ------------- | ------------- |  ------------- |  ------------- | 
-| [Arch Linux](https://archlinux.org) | [UC Berkerly](https://archlinux.org/mirrors/ocf.berkeley.edu/) |  Full Mirror | ✅ |
-| [Rocky Linux](https://rockylinux.org) | [eScience Center, Nanjing University](https://mirrors.nju.edu.cn/rocky) | Full Mirror | ✅ | 
+| [Arch Linux](https://archlinux.org) | [Rackspace London](https://lon.mirror.rackspace.com/archlinux/) |  Full Mirror | ✅ |
+| [Alma Linux](https://almalinux.org) | [AlmaLinux, Tier 0](https://rsync.repo.almalinux.org/almalinux/) | Full Mirror | ✅ | 
 | [EndeavourOS](https://endeavouros.com) | [Alpix](https://mirror.alpix.eu/endeavouros/) | Full Mirror | ✅ | 
 | [MXLinux](https://mxlinux.org/) | [Rochester Institute of Technology](https://mirrors.rit.edu/mxlinux/) | Full Mirror | ✅ | 
 | [ZorinOS](https://zorin.com/os/) | ZorinOS Tier 1 Upstream | ISOs | ✅ |
