@@ -51,6 +51,7 @@ In this setup, Caddy is ran as a webserver to handle ssl certs, and L4 forwardin
 ### Contact
 
 We prefer github issues. If unable to respond, please reach out via email.
-[Jingkai Tan](mailto:contact@jingk.ai?subject=[Mirror]mirror.jingk.ai%20issues)
-[Likang Tan](mailto:tanlikang11@gmail.com?subject=[Mirror]mirror.jingk.ai%20issues)
+
+* [Jingkai Tan](mailto:contact@jingk.ai?subject=[Mirror]mirror.jingk.ai%20issues)
+* [Likang Tan](mailto:tanlikang11@gmail.com?subject=[Mirror]mirror.jingk.ai%20issues)
 
