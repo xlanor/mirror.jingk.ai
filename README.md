@@ -29,10 +29,10 @@ The following packages are mirrored:
 | [Arch Linux](https://archlinux.org) | [Rackspace London](https://lon.mirror.rackspace.com/archlinux/) |  Full Mirror | ✅ |
 | [Alma Linux](https://almalinux.org) | [AlmaLinux, Tier 0](https://rsync.repo.almalinux.org/almalinux/) | Full Mirror | ✅ | 
 | [ArcoLinux](https://archolinux.com) | [Belnet](ftp://ftp.belnet.be ) | Full Mirror | ✅ | 
-| [Alpine Linux](https://alpinelinux.org) | Tier 0 AlpineLinux(rsync.alpinelinux.org/alpine/ ) | Full Mirror | ❌ | 
+| [Alpine Linux](https://alpinelinux.org) | [Tier 0 AlpineLinux](rsync://rsync.alpinelinux.org/alpine/) | Full Mirror | ❌ | 
 | [EndeavourOS](https://endeavouros.com) | [Alpix](https://mirror.alpix.eu/endeavouros/) | Full Mirror | ✅ | 
 | [LinuxMint](https://linuxmint.com) | [Tier 0 LinuxMint]([https://mirror.alpix.eu/endeavouros/](http://rsync-packages.linuxmint.com/)) | Full Mirror | ✅ | 
-| [LinuxMint ISO](https://linuxmint.com) | Tier 0 LinuxMint ) | ISO Mirror | ❌ | 
+| [LinuxMint ISO](https://linuxmint.com) | Tier 0 LinuxMint ) | ISO Mirror | ✅ | 
 | [MXLinux](https://mxlinux.org/) | [Rochester Institute of Technology](https://mirrors.rit.edu/mxlinux/) | Full Mirror | ✅ | 
 | [ZorinOS](https://zorin.com/os/) | ZorinOS Tier 1 Upstream | ISOs | ✅ |
 
