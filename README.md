@@ -3,6 +3,8 @@
 
 A Linux mirror in the Singapore region. Serving APAC users.
 
+CN / RU is geoblocked due to the constant flood of traffic from the same ASN.
+
 If you would like your distribution to be mirrored, please open an issue with an rsync upstream.
 
 Inspired by my friends running mirrors:
